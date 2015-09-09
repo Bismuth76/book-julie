@@ -15,27 +15,58 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   // Learn more about auto-binding templates at http://goo.gl/Dx1u2g
   var app = document.querySelector('#app');
 
-  app.displayInstalledToast = function() {
-    document.querySelector('#caching-complete').show();
-  };
-
   // Listen for template bound event to know when bindings
   // have resolved and content has been stamped to the page
   app.addEventListener('dom-change', function() {
+
     console.log('Our app is ready to rock!');
+    var title = document.querySelector('.app-name');
+    var toolbar = document.querySelector('paper-toolbar');
+
+    title.style.opacity = 0;
+
+    addEventListener('paper-header-transform', function(e) {
+
+      var d = e.detail;
+      var m = d.height - d.condensedHeight;
+
+      var opacity = 1 - Math.max(0, (m - d.y) / m);
+
+      title.style.opacity = opacity;
+
+      var shadowSize = Math.round(opacity * 10);
+      var shadowSize2 = Math.round(opacity * 3);
+      var shadowSize3 = Math.round(opacity);
+
+      toolbar.style['box-shadow'] = '0 ' + shadowSize2 + 'px ' + shadowSize + 'px ' + shadowSize3 + 'px #8A8A8A';
+
+    });
+
+
+
+    document.querySelector('#book-button').addEventListener('click', function() {
+        console.log('Click on BOOK item');
+    });
+
+    document.querySelector('#cv-button').addEventListener('click', function() {
+      console.log('Click on CV item');
+    });
+
   });
+
+  app._onTileClick = function(event) {
+    this.$['fullsize-card'].color = event.detail.data.color;
+    //this.$.pages.selected = 1;
+    console.log('Ouverture de la tile', event.detail.data);
+  };
+  app._onFullsizeClick = function(event) {
+    //this.$.pages.selected = 0;
+    console.log('Ouverture de la tile', event.detail.data);
+  };
 
   // See https://github.com/Polymer/polymer/issues/1381
   window.addEventListener('WebComponentsReady', function() {
     // imports are loaded and elements have been registered
   });
-
-  // Close drawer after menu item is selected if drawerPanel is narrow
-  app.onMenuSelect = function() {
-    var drawerPanel = document.querySelector('#paperDrawerPanel');
-    if (drawerPanel.narrow) {
-      drawerPanel.closeDrawer();
-    }
-  };
 
 })(document);

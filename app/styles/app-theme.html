@@ -22,28 +22,72 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   /* Application theme */
 
   :root {
-    --dark-primary-color: #303F9F;
-    --default-primary-color: #3F51B5;
-    --light-primary-color: #C5CAE9;
-    --text-primary-color: #ffffff; /*text/icons*/
-    --accent-color: #FF4081;
-    --primary-background-color: #c5cae9;
-    --primary-text-color: #212121;
-    --secondary-text-color: #727272;
+    --dark-primary-color: #181B1E;
+    --default-primary-color: #FFFFFF;
+    --light-primary-color: #FFFFFF;
+    --text-primary-color: #181B1E; /*text/icons*/
+    --accent-color: #F7B2B4;
+    --primary-background-color: #FFFFFF;
+    --primary-text-color: #181B1E;
+    --secondary-text-color: #FFFFFF;
     --disabled-text-color: #bdbdbd;
     --divider-color: #B6B6B6;
 
     /* Components */
 
-    /* paper-drawer-panel */
-    --drawer-menu-color: #ffffff;
-    --drawer-border-color: 1px solid #ccc;
-    --drawer-toolbar-border-color: 1px solid rgba(0, 0, 0, 0.22);
-
     /* paper-menu */
     --paper-menu-background-color: #fff;
     --menu-link-color: #111111;
   }
+
+
+
+  paper-scroll-header-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--paper-grey-200, #eee);
+
+  /* background for toolbar when it is at its full size */
+  --paper-scroll-header-panel-full-header: {
+       background-image: url('../images/jv-bg.png');
+       background-size: 250px;
+       background-color: #F7B2B4;
+   };
+
+  /* background for toolbar when it is condensed */
+  --paper-scroll-header-panel-condensed-header: {
+     background-color: #FFFFFF;
+   };
+
+  }
+
+  paper-scroll-header-panel::shadow #headerContainer.paper-scroll-header-panel {
+    pointer-events: none;
+  }
+
+
+  paper-toolbar.tall {
+    background-color: transparent;
+    height: 400px;
+    /*box-shadow: 0 3px 10px 1px #8A8A8A;*/
+  }
+
+  paper-toolbar.tall .title {
+    font-size: 40px;
+    margin-left: 60px;
+
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+  }
+
+
+
+
+
+
 
   /* General styles */
 
@@ -104,9 +148,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     margin-left: 48px;
   }
 
+  .menu-item {
+    padding-right: 30px;
+  }
+
+  .menu-item.active {
+    font-weight: bold;
+  }
+
   /* Height of the scroll area */
   .content {
-    height: 900px;
+    height: 2000px;
   }
 
   /* Breakpoints */
