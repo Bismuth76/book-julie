@@ -42,16 +42,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     });
 
-
-
-    document.querySelector('#book-button').addEventListener('click', function() {
-        console.log('Click on BOOK item');
-    });
-
-    document.querySelector('#cv-button').addEventListener('click', function() {
-      console.log('Click on CV item');
-    });
-
   });
 
   app._onTileClick = function(event) {

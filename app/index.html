@@ -69,8 +69,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <span class="flex"></span>
 
           <!-- Toolbar icons -->
-          <span id="book-button" class="menu-item">Book</span>
-          <span id="cv-button" class="menu-item">CV</span>
+
+          <iron-selector selected-class="active" attr-for-selected="route" selected="{{route}}">
+            <a href="#!/home" id="book-button" route="home" class="menu-item">Book</a>
+            <a href="#!/cv" id="cv-button" route="cv" class="menu-item">CV</a>
+          </iron-selector>
+
+
 
           <!-- Application sub title -->
           <div class="bottom title"></div>
