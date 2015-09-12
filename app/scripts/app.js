@@ -81,14 +81,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'POC',
       details: 'Ergonomie / Direction Artistique / Webdesign',
       image: 'images/home/TAN.png',
-      description: 'Blablabla très long...'
+      description: 'Blablabla très long...',
+      images: [
+        "images/book/VISUELS_POC_TAN/01.png",
+        "images/book/VISUELS_POC_TAN/02.png",
+        "images/book/VISUELS_POC_TAN/03.png",
+        "images/book/VISUELS_POC_TAN/04.png",
+        "images/book/VISUELS_POC_TAN/05.png",
+        "images/book/VISUELS_POC_TAN/06.png"
+      ]
     },
     'ISDEM': {
       id: 'ISDEM',
       name: 'ISDEM',
       type: 'Avant-Vente',
       details: 'Direction Artistique / Webdesign',
-      image: 'images/home/ISDEM.png'
+      image: 'images/home/ISDEM.png',
+      description: 'Blablabla très long...',
+      images: [
+        "images/book/VISUELS_POC_TAN/01.png",
+        "images/book/VISUELS_POC_TAN/02.png"
+      ]
     }
   };
 
