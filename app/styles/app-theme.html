@@ -150,7 +150,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   /* Height of the scroll area */
   .content {
-    /*height: 2000px;*/
+    min-height: 1000px;
+  }
+
+  .book-detail-description {
+    display: inline-block;
+    width: 100%;
+    background: white;
+    padding: 20px 50px;
   }
 
   .app-name {
@@ -247,11 +254,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       border-right: 1px solid rgba(0, 0, 0, 0.14);
     }
 
-    iron-pages {
+    iron-pages > * {
       padding: 48px 62px;
     }
 
-    .content {
+    iron-pages > .no-padding {
+      padding: 0;
+    }
+
+    .limited-content {
       max-width: 1630px;
       margin: 0 auto;
       min-height: 2000px;

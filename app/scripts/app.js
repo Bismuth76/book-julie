@@ -80,7 +80,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       name: 'TAN',
       type: 'POC',
       details: 'Ergonomie / Direction Artistique / Webdesign',
-      image: 'images/home/TAN.png'
+      image: 'images/home/TAN.png',
+      description: 'Blablabla très long...'
     },
     'ISDEM': {
       id: 'ISDEM',

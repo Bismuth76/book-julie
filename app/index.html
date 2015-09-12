@@ -87,7 +87,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div class="content">
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
-            <section data-route="home">
+            <section data-route="home" class="limited-content">
               <jft-julie-home-tile class="col-66" model="{{model.PocTan}}"></jft-julie-home-tile>
               <jft-julie-home-tile class="col-33" model="{{model.ISDEM}}"></jft-julie-home-tile>
               <jft-julie-home-tile class="col-33" image="images/home/BPATL.png"></jft-julie-home-tile>
@@ -106,13 +106,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <jft-julie-home-tile class="col-33" image="images/home/FRANSBONHOMME.png"></jft-julie-home-tile>
             </section>
 
-            <section data-route="book-detail">
+            <section data-route="book-detail" class="no-padding">
+              <div class="book-detail-description">{{currentModel.description}}</div>
               BOOK DETAIL
               <span>{{currentModel.name}}</span>
             </section>
 
-            <section data-route="cv">
-              CV
+            <section data-route="cv" class="limited-content">
+
             </section>
 
             <section data-route="contact">
