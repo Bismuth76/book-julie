@@ -20,13 +20,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <!-- Chrome for Android theme color -->
-  <meta name="theme-color" content="#F7B2B4">
+  <meta name="theme-color" content="#f38b8f">
 
   <!-- Web Application Manifest -->
   <link rel="manifest" href="manifest.json">
 
   <!-- Tile color for Win8 -->
-  <meta name="msapplication-TileColor" content="#F7B2B4">
+  <meta name="msapplication-TileColor" content="#f38b8f">
 
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -59,20 +59,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <span id="browser-sync-binding"></span>
   <template is="dom-bind" id="app">
 
-     <paper-scroll-header-panel condenses condensed-header-height="66">
+     <paper-scroll-header-panel id="paperScrollHeaderPanel" condenses condensed-header-height="80">
 
         <!-- Main Toolbar -->
         <paper-toolbar id="mainToolbar" class="tall">
 
-          <div class="paper-font-display1 app-name">Julie Vuillaume</div>
+          <div class="app-name">Julie Vuillaume</div>
 
-          <span class="flex"></span>
+          <span class="flex app-flex"></span>
 
           <!-- Toolbar icons -->
 
-          <iron-selector selected-class="active" attr-for-selected="route" selected="{{route}}">
-            <a href="#!/home" id="book-button" route="home" class="menu-item">Book</a>
-            <a href="#!/cv" id="cv-button" route="cv" class="menu-item">CV</a>
+          <iron-selector selected-class="active" attr-for-selected="route" selected="{{route}}" class="menu-item-container">
+            <a href="/home" route="home" class="menu-item"><paper-button>PORTFOLIO</paper-button></a>
+            <a href="/cv" route="cv" class="menu-item"><paper-button>CV</paper-button></a>
+            <a href="/contact" route="contact" class="menu-item"><paper-button>CONTACT</paper-button></a>
           </iron-selector>
 
 
@@ -87,7 +88,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
             <section data-route="home">
-                HOME
+                <jft-julie-home-tile class="col-66" image="images/home/TAN.png"></jft-julie-home-tile>
+                <jft-julie-home-tile class="col-33" image="images/home/ISDEM.png"></jft-julie-home-tile>
+                <jft-julie-home-tile class="col-33" image="images/home/BPATL.png"></jft-julie-home-tile>
+                <jft-julie-home-tile class="col-50" image="images/home/I_BP.png"></jft-julie-home-tile>
+                <jft-julie-home-tile class="col-50" image="images/home/GUIMIER.png"></jft-julie-home-tile>
+                <jft-julie-home-tile class="col-33" image="images/home/DOCKER.png"></jft-julie-home-tile>
+                <jft-julie-home-tile class="col-33" image="images/home/MPA.png"></jft-julie-home-tile>
+                <jft-julie-home-tile class="col-33" image="images/home/24H.png"></jft-julie-home-tile>
+                <jft-julie-home-tile class="col-50" image="images/home/NESTLE_WATERS.png"></jft-julie-home-tile>
+                <jft-julie-home-tile class="col-50" image="images/home/POC_PENIBILITE.png"></jft-julie-home-tile>
+              <jft-julie-home-tile class="col-66" image="images/home/POC_IMMO.png" style="float: right;"></jft-julie-home-tile>
+              <jft-julie-home-tile class="col-33" image="images/home/CBP.png"></jft-julie-home-tile>
+              <jft-julie-home-tile class="col-33" image="images/home/MEETUP.png"></jft-julie-home-tile>
+                <jft-julie-home-tile class="col-33" image="images/home/ENS_RENNES.png"></jft-julie-home-tile>
+                <jft-julie-home-tile class="col-33" image="images/home/FONTEVRAUD.png"></jft-julie-home-tile>
+                <jft-julie-home-tile class="col-33" image="images/home/FRANSBONHOMME.png"></jft-julie-home-tile>
             </section>
 
             <section data-route="book-detail">

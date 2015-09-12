@@ -26,7 +26,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     --default-primary-color: #FFFFFF;
     --light-primary-color: #FFFFFF;
     --text-primary-color: #181B1E; /*text/icons*/
-    --accent-color: #F7B2B4;
+    --accent-color: #f38b8f;
     --primary-background-color: #FFFFFF;
     --primary-text-color: #181B1E;
     --secondary-text-color: #FFFFFF;
@@ -50,17 +50,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     left: 0;
     background-color: var(--paper-grey-200, #eee);
 
-  /* background for toolbar when it is at its full size */
-  --paper-scroll-header-panel-full-header: {
-       background-image: url('../images/jv-bg.png');
-       background-size: 250px;
-       background-color: #F7B2B4;
-   };
+    /* background for toolbar when it is at its full size */
+    --paper-scroll-header-panel-full-header: {
+         background-image: url('../images/logo.svg');
+         background-size: 260px;
+         background-color: #f38b8f;
+     };
 
-  /* background for toolbar when it is condensed */
-  --paper-scroll-header-panel-condensed-header: {
-     background-color: #FFFFFF;
-   };
+    /* background for toolbar when it is condensed */
+    --paper-scroll-header-panel-condensed-header: {
+       background-color: #FFFFFF;
+     };
 
   }
 
@@ -148,17 +148,34 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     margin-left: 48px;
   }
 
-  .menu-item {
-    padding-right: 30px;
-  }
-
-  .menu-item.active {
-    font-weight: bold;
-  }
-
   /* Height of the scroll area */
   .content {
-    height: 2000px;
+    /*height: 2000px;*/
+  }
+
+  .app-name {
+    font-size: 30px;
+    padding-top: 14px;
+  }
+
+  .menu-item {
+    font-size: 20px;
+    color: white;
+  }
+
+  .menu-item-container {
+    padding-top: 13px;
+  }
+
+  .menu-item paper-button {
+    border-radius: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+  }
+
+  .menu-item.active paper-button {
+    border-color: white;
   }
 
   /* Breakpoints */
@@ -178,7 +195,28 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     .app-name {
-      font-size: 26px;
+      /*font-size: 30px;
+      padding-left: 12px;
+      padding-top: 25px;*/
+      display: none;
+    }
+
+    .app-name .complete {
+      display: none;
+    }
+
+    .app-flex {
+      flex: none;
+    }
+
+    .menu-item {
+      font-size: 13px;
+      color: white;
+    }
+
+    .menu-item-container {
+      padding-top: 26px;
+      margin: 0 auto;
     }
 
     #drawer .paper-toolbar {
@@ -213,6 +251,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       padding: 48px 62px;
     }
 
+    .content {
+      max-width: 1630px;
+      margin: 0 auto;
+      min-height: 2000px;
+    }
+
   }
 
   /* Material Design Adaptive Breakpoints */
@@ -233,13 +277,41 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   /* mobile-large-landscape */
   @media all and (min-width: 481px) and (orientation: landscape) { }
   /* tablet-small-landscape */
-  @media all and (min-width: 600px) and (max-width: 960px) and (orientation: landscape) { }
+  @media all and (min-width: 600px) and (max-width: 960px) and (orientation: landscape) {
+
+    .menu-item {
+      font-size: 16px;
+    }
+
+    .menu-item-container {
+      padding-top: 20px;
+    }
+
+    .app-name {
+      font-size: 20px;
+    }
+
+  }
   /* tablet-large-landscape */
   @media all and (min-width: 961px) and (orientation: landscape) { }
   /* tablet-small */
   @media all and (min-width: 600px) and (orientation: portrait) { }
   /* tablet-large */
-  @media all and (min-width: 601px) and (max-width: 840px) and (orientation : portrait) { }
+  @media all and (min-width: 601px) and (max-width: 840px) and (orientation : portrait) {
+
+    .menu-item {
+      font-size: 16px;
+    }
+
+    .menu-item-container {
+      padding-top: 20px;
+    }
+
+    .app-name {
+      font-size: 20px;
+    }
+
+  }
   /* desktop-x-small-landscape */
   @media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) { }
   /* desktop-x-small */
@@ -254,6 +326,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   @media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3) { }
   /* desktop-large */
   @media all and (min-width: 1281px) and (max-width: 1600px) { }
+  /* desktop-large + */
+  @media all and (min-width: 1281px) {
+    .menu-item-container {
+      margin-right: 120px;
+    }
+  }
   /* desktop-xlarge */
   @media all and (min-width: 1601px) and (max-width: 1920px) { }
 </style>

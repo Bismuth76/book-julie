@@ -22,27 +22,54 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     console.log('Our app is ready to rock!');
     var title = document.querySelector('.app-name');
     var toolbar = document.querySelector('paper-toolbar');
+    var items = document.querySelectorAll('.menu-item');
 
     title.style.opacity = 0;
+
+    var red=255, green=255, blue=255;
 
     addEventListener('paper-header-transform', function(e) {
 
       var d = e.detail;
       var m = d.height - d.condensedHeight;
 
-      var opacity = 1 - Math.max(0, (m - d.y) / m);
+      var factor = 1 - Math.max(0, (m - d.y) / m);
 
-      title.style.opacity = opacity;
+      red = Math.round(255 - factor * (255 - 23));
+      green = Math.round(255 - factor * (255 - 27));
+      blue = Math.round(255 - factor * (255 - 30));
 
-      var shadowSize = Math.round(opacity * 10);
-      var shadowSize2 = Math.round(opacity * 3);
-      var shadowSize3 = Math.round(opacity);
+      [].forEach.call(items, function(item) {
+        item.style.color = 'rgb(' + red + ',' + green + ',' + blue + ')';
+        item.querySelector('paper-button').style['border-color'] = item.className.indexOf('active') > -1 ? 'rgb(' + red + ',' + green + ',' + blue + ')' : 'transparent';
+      });
 
-      toolbar.style['box-shadow'] = '0 ' + shadowSize2 + 'px ' + shadowSize + 'px ' + shadowSize3 + 'px #8A8A8A';
+      //mavhin = 0 alors coleur = 255
+      //machin = 1 alors couleur = 9
+
+      title.style.opacity = factor;
+      title.style.color = 'rgb(' + red + ',' + green + ',' + blue + ')';
+
+      var shadowSize = Math.round(factor * 10);
+      var shadowSize2 = Math.round(factor * 3);
+      var shadowSize3 = Math.round(factor);
+
+      toolbar.style['box-shadow'] = '0 ' + shadowSize2 + 'px ' + shadowSize + 'px ' + shadowSize3 + 'px #e1e1e1';
 
     });
 
+    [].forEach.call(items, function(item) {
+      item.addEventListener('click', function() {
+        [].forEach.call(items, function(item) {
+          item.style.color = 'rgb(' + red + ',' + green + ',' + blue + ')';
+          item.querySelector('paper-button').style['border-color'] = item.className.indexOf('active') > -1 ? 'rgb(' + red + ',' + green + ',' + blue + ')' : 'transparent';
+        });
+      });
+    });
+
   });
+
+
 
   app._onTileClick = function(event) {
     this.$['fullsize-card'].color = event.detail.data.color;

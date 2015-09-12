@@ -4,9 +4,15 @@
     <file url="file://$PROJECT_DIR$/.gitattributes" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/elements/elements.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/elements/jft-font-baron/jft-font-baron.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/elements/jft-font-baron/stylesheet.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/elements/jft-julie-home-tile/jft-julie-home-tile.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/elements/routing.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/images/logo.svg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/images/signe_gauche.svg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/app-theme.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/main.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bower_components/paper-scroll-header-panel/demo/index.html" charset="UTF-8" />
   </component>
 </project>

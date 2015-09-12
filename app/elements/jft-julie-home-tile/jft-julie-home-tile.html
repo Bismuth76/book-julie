@@ -1,0 +1,106 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="..\..\bower_components/polymer/polymer.html">
+
+<dom-module id="jft-julie-home-tile">
+  <style>
+    :host {
+      display: block;
+      float: left;
+    }
+    .image-container {
+      margin-top: 62.5%;
+    }
+    .image-inner-container {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 5px;
+    }
+
+    .link-container {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: opacity 500ms ease-out;
+    }
+
+    .link-container:hover {
+      opacity: 1;
+      transition: opacity 500ms ease-in;
+    }
+
+    @media (max-width: 600px) {
+      .image-inner-container {
+        padding: 20px 10px;
+      }
+    }
+
+    :host.col-33 {
+      width: 33.33%;
+      display: inline-block;
+      position: relative;
+    }
+    :host.col-66 {
+      width: 66.66%;
+      display: inline-block;
+      position: relative;
+    }
+    :host.col-50 {
+      width: 50%;
+      display: inline-block;
+      position: relative;
+    }
+
+    @media (max-width: 601px) {
+      :host.col-33,
+      :host.col-50,
+      :host.col-66 {
+        width: 100%;
+      }
+
+    }
+
+  </style>
+  <template>
+    <div class="container">
+      <div class="image-container">
+        <div class="image-inner-container">
+          <iron-image src="{{image}}" style="width:100%; height: 100%;" sizing="cover" preload fade placeholder="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAMSURBVBhXY/j//z8ABf4C/qc1gYQAAAAASUVORK5CYII="></iron-image>
+        </div>
+      </div>
+      <div class="link-container">
+        <a href="/cv">TAN</a>
+        <div class="link-inner-container"></div>
+      </div>
+    </div>
+  </template>
+</dom-module>
+<script>
+(function() {
+  Polymer({
+    is: 'jft-julie-home-tile',
+
+    properties: {
+      image: {
+        type: String,
+        value: '/images/home/24H.png',
+        notify: true
+      }
+    }
+  });
+})();
+</script>

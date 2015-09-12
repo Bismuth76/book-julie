@@ -12,24 +12,41 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <script>
   window.addEventListener('WebComponentsReady', function() {
 
+    app.route = 'home';
+
+    var scrollProcess = function(context, next) {
+      if(app.$.paperScrollHeaderPanel.headerState === 2 || app.$.paperScrollHeaderPanel.headerState === 1) {
+        app.$.paperScrollHeaderPanel.scroll(app.$.paperScrollHeaderPanel.headerHeight - app.$.paperScrollHeaderPanel.condensedHeaderHeight, true);
+      }
+      next();
+    }
+
     // We use Page.js for routing. This is a Micro
     // client-side router inspired by the Express router
     // More info: https://visionmedia.github.io/page.js/
-    page('/', function () {
+    page('/', scrollProcess, function () {
       app.route = 'home';
     });
 
-    page('/book', function () {
+    page('/home', scrollProcess, function () {
       app.route = 'home';
     });
 
-    page('/book/:name', function (data) {
+    page('/book', scrollProcess, function () {
+      app.route = 'home';
+    });
+
+    page('/book/:name', scrollProcess, function (data) {
       app.route = 'book-detail';
       app.bookDetail = data.params;
     });
 
-    page('/cv', function () {
+    page('/cv', scrollProcess, function () {
       app.route = 'cv';
+    });
+
+    page('/contact', scrollProcess, function () {
+      app.route = 'contact';
     });
 
     // add #! before urls
