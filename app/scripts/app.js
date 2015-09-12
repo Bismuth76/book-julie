@@ -50,11 +50,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       title.style.opacity = factor;
       title.style.color = 'rgb(' + red + ',' + green + ',' + blue + ')';
 
-      var shadowSize = Math.round(factor * 10);
-      var shadowSize2 = Math.round(factor * 3);
+      var shadowSize = Math.round(factor * 2);
+      var shadowSize2 = Math.round(factor * 2);
       var shadowSize3 = Math.round(factor);
 
-      toolbar.style['box-shadow'] = '0 ' + shadowSize2 + 'px ' + shadowSize + 'px ' + shadowSize3 + 'px #e1e1e1';
+      toolbar.style['box-shadow'] = '0 ' + shadowSize2 + 'px ' + shadowSize + 'px ' + shadowSize3 + 'px rgba(0, 0, 0, 0.1)';
 
     });
 
