@@ -88,26 +88,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
             <section data-route="home">
-                <jft-julie-home-tile class="col-66" image="images/home/TAN.png"></jft-julie-home-tile>
-                <jft-julie-home-tile class="col-33" image="images/home/ISDEM.png"></jft-julie-home-tile>
-                <jft-julie-home-tile class="col-33" image="images/home/BPATL.png"></jft-julie-home-tile>
-                <jft-julie-home-tile class="col-50" image="images/home/I_BP.png"></jft-julie-home-tile>
-                <jft-julie-home-tile class="col-50" image="images/home/GUIMIER.png"></jft-julie-home-tile>
-                <jft-julie-home-tile class="col-33" image="images/home/DOCKER.png"></jft-julie-home-tile>
-                <jft-julie-home-tile class="col-33" image="images/home/MPA.png"></jft-julie-home-tile>
-                <jft-julie-home-tile class="col-33" image="images/home/24H.png"></jft-julie-home-tile>
-                <jft-julie-home-tile class="col-50" image="images/home/NESTLE_WATERS.png"></jft-julie-home-tile>
-                <jft-julie-home-tile class="col-50" image="images/home/POC_PENIBILITE.png"></jft-julie-home-tile>
+              <jft-julie-home-tile class="col-66" model="{{model.PocTan}}"></jft-julie-home-tile>
+              <jft-julie-home-tile class="col-33" model="{{model.ISDEM}}"></jft-julie-home-tile>
+              <jft-julie-home-tile class="col-33" image="images/home/BPATL.png"></jft-julie-home-tile>
+              <jft-julie-home-tile class="col-50" image="images/home/I_BP.png"></jft-julie-home-tile>
+              <jft-julie-home-tile class="col-50" image="images/home/GUIMIER.png"></jft-julie-home-tile>
+              <jft-julie-home-tile class="col-33" image="images/home/DOCKER.png"></jft-julie-home-tile>
+              <jft-julie-home-tile class="col-33" image="images/home/MPA.png"></jft-julie-home-tile>
+              <jft-julie-home-tile class="col-33" image="images/home/24H.png"></jft-julie-home-tile>
+              <jft-julie-home-tile class="col-50" image="images/home/NESTLE_WATERS.png"></jft-julie-home-tile>
+              <jft-julie-home-tile class="col-50" image="images/home/POC_PENIBILITE.png"></jft-julie-home-tile>
               <jft-julie-home-tile class="col-66" image="images/home/POC_IMMO.png" style="float: right;"></jft-julie-home-tile>
               <jft-julie-home-tile class="col-33" image="images/home/CBP.png"></jft-julie-home-tile>
               <jft-julie-home-tile class="col-33" image="images/home/MEETUP.png"></jft-julie-home-tile>
-                <jft-julie-home-tile class="col-33" image="images/home/ENS_RENNES.png"></jft-julie-home-tile>
-                <jft-julie-home-tile class="col-33" image="images/home/FONTEVRAUD.png"></jft-julie-home-tile>
-                <jft-julie-home-tile class="col-33" image="images/home/FRANSBONHOMME.png"></jft-julie-home-tile>
+              <jft-julie-home-tile class="col-33" image="images/home/ENS_RENNES.png"></jft-julie-home-tile>
+              <jft-julie-home-tile class="col-33" image="images/home/FONTEVRAUD.png"></jft-julie-home-tile>
+              <jft-julie-home-tile class="col-33" image="images/home/FRANSBONHOMME.png"></jft-julie-home-tile>
             </section>
 
             <section data-route="book-detail">
               BOOK DETAIL
+              <span>{{currentModel.name}}</span>
             </section>
 
             <section data-route="cv">

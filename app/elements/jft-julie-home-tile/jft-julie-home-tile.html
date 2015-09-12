@@ -19,6 +19,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     .image-container {
       margin-top: 62.5%;
     }
+
+    .link-container,
     .image-inner-container {
       position: absolute;
       top: 0;
@@ -29,17 +31,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
 
     .link-container {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      margin: 5px;
       opacity: 0;
+      background: black;
       transition: opacity 500ms ease-out;
+      text-decoration: none;
+      color: white;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 25px;
     }
 
     .link-container:hover {
-      opacity: 1;
+      opacity: 0.9;
       transition: opacity 500ms ease-in;
     }
 
@@ -79,13 +89,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="container">
       <div class="image-container">
         <div class="image-inner-container">
-          <iron-image src="{{image}}" style="width:100%; height: 100%;" sizing="cover" preload fade placeholder="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAMSURBVBhXY/j//z8ABf4C/qc1gYQAAAAASUVORK5CYII="></iron-image>
+          <iron-image src="{{model.image}}" style="width:100%; height: 100%; background: white;" sizing="cover" preload fade></iron-image>
         </div>
       </div>
-      <div class="link-container">
-        <a href="/cv">TAN</a>
-        <div class="link-inner-container"></div>
-      </div>
+        <a class="link-container layout vertical center-center" href="{{href}}">
+          <h1>{{model.name}}</h1>
+          <h2>{{model.type}}</h2>
+          <span>{{model.details}}</span>
+        </a>
     </div>
   </template>
 </dom-module>
@@ -95,11 +106,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     is: 'jft-julie-home-tile',
 
     properties: {
-      image: {
+      model: Object,
+      href: {
         type: String,
-        value: '/images/home/24H.png',
-        notify: true
+        computed: '_computeHref(model)'
       }
+    },
+
+    _computeHref: function(model) {
+      return '/book/' + model.id;
     }
   });
 })();

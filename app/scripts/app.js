@@ -69,21 +69,28 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   });
 
-
-
-  app._onTileClick = function(event) {
-    this.$['fullsize-card'].color = event.detail.data.color;
-    //this.$.pages.selected = 1;
-    console.log('Ouverture de la tile', event.detail.data);
-  };
-  app._onFullsizeClick = function(event) {
-    //this.$.pages.selected = 0;
-    console.log('Ouverture de la tile', event.detail.data);
-  };
-
   // See https://github.com/Polymer/polymer/issues/1381
   window.addEventListener('WebComponentsReady', function() {
     // imports are loaded and elements have been registered
   });
+
+  app.model = {
+    'PocTan': {
+      id: 'PocTan',
+      name: 'TAN',
+      type: 'POC',
+      details: 'Ergonomie / Direction Artistique / Webdesign',
+      image: 'images/home/TAN.png'
+    },
+    'ISDEM': {
+      id: 'ISDEM',
+      name: 'ISDEM',
+      type: 'Avant-Vente',
+      details: 'Direction Artistique / Webdesign',
+      image: 'images/home/ISDEM.png'
+    }
+  };
+
+  app.currentModel;
 
 })(document);

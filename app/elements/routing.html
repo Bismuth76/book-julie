@@ -15,7 +15,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     app.route = 'home';
 
     var scrollProcess = function(context, next) {
-      if(app.$.paperScrollHeaderPanel.headerState === 2 || app.$.paperScrollHeaderPanel.headerState === 1) {
+      if(app.$.paperScrollHeaderPanel.headerState !== 0) {
         app.$.paperScrollHeaderPanel.scroll(app.$.paperScrollHeaderPanel.headerHeight - app.$.paperScrollHeaderPanel.condensedHeaderHeight, true);
       }
       next();
@@ -36,9 +36,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       app.route = 'home';
     });
 
-    page('/book/:name', scrollProcess, function (data) {
+    page('/book/:id', scrollProcess, function (data) {
       app.route = 'book-detail';
-      app.bookDetail = data.params;
+      app.currentModel = app.model[data.params.id];
     });
 
     page('/cv', scrollProcess, function () {
