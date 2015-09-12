@@ -15,7 +15,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="Polymer Starter Kit" />
+  <meta name="generator" content="Polymer Starter Kit"/>
   <title>Polymer Starter Kit</title>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -56,79 +56,108 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 </head>
 
 <body unresolved class="fullbleed layout vertical">
-  <span id="browser-sync-binding"></span>
-  <template is="dom-bind" id="app">
+<span id="browser-sync-binding"></span>
+<template is="dom-bind" id="app">
 
-     <paper-scroll-header-panel id="paperScrollHeaderPanel" condenses condensed-header-height="80">
+  <paper-scroll-header-panel id="paperScrollHeaderPanel" condenses condensed-header-height="80">
 
-        <!-- Main Toolbar -->
-        <paper-toolbar id="mainToolbar" class="tall">
+    <!-- Main Toolbar -->
+    <paper-toolbar id="mainToolbar" class="tall">
 
-          <div class="app-name">Julie Vuillaume</div>
+      <div class="app-name">Julie Vuillaume</div>
 
-          <span class="flex app-flex"></span>
+      <span class="flex app-flex"></span>
 
-          <!-- Toolbar icons -->
+      <!-- Toolbar icons -->
 
-          <iron-selector selected-class="active" attr-for-selected="route" selected="{{route}}" class="menu-item-container">
-            <a href="/home" route="home" class="menu-item"><paper-button>PORTFOLIO</paper-button></a>
-            <a href="/cv" route="cv" class="menu-item"><paper-button>CV</paper-button></a>
-            <a href="/contact" route="contact" class="menu-item"><paper-button>CONTACT</paper-button></a>
-          </iron-selector>
+      <iron-selector selected-class="active" attr-for-selected="route" selected="{{route}}" class="menu-item-container">
+        <a href="/home" route="home" class="menu-item">
+          <paper-button>PORTFOLIO</paper-button>
+        </a>
+        <a href="/cv" route="cv" class="menu-item">
+          <paper-button>CV</paper-button>
+        </a>
+        <a href="/contact" route="contact" class="menu-item">
+          <paper-button>CONTACT</paper-button>
+        </a>
+      </iron-selector>
 
 
+      <!-- Application sub title -->
+      <div class="bottom title"></div>
 
-          <!-- Application sub title -->
-          <div class="bottom title"></div>
+    </paper-toolbar>
 
-        </paper-toolbar>
+    <!-- Main Content -->
+    <div class="content">
+      <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
-        <!-- Main Content -->
-        <div class="content">
-          <iron-pages attr-for-selected="data-route" selected="{{route}}">
+        <section data-route="home" class="limited-content">
+          <jft-julie-home-tile class="col-66" model="{{model.PocTan}}"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" model="{{model.ISDEM}}"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" image="images/home/BPATL.png"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-50" image="images/home/I_BP.png"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-50" image="images/home/GUIMIER.png"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" image="images/home/DOCKER.png"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" image="images/home/MPA.png"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" image="images/home/24H.png"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-50" image="images/home/NESTLE_WATERS.png"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-50" image="images/home/POC_PENIBILITE.png"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-66" image="images/home/POC_IMMO.png"
+                               style="float: right;"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" image="images/home/CBP.png"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" image="images/home/MEETUP.png"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" image="images/home/ENS_RENNES.png"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" image="images/home/FONTEVRAUD.png"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" image="images/home/FRANSBONHOMME.png"></jft-julie-home-tile>
+        </section>
 
-            <section data-route="home" class="limited-content">
-              <jft-julie-home-tile class="col-66" model="{{model.PocTan}}"></jft-julie-home-tile>
-              <jft-julie-home-tile class="col-33" model="{{model.ISDEM}}"></jft-julie-home-tile>
-              <jft-julie-home-tile class="col-33" image="images/home/BPATL.png"></jft-julie-home-tile>
-              <jft-julie-home-tile class="col-50" image="images/home/I_BP.png"></jft-julie-home-tile>
-              <jft-julie-home-tile class="col-50" image="images/home/GUIMIER.png"></jft-julie-home-tile>
-              <jft-julie-home-tile class="col-33" image="images/home/DOCKER.png"></jft-julie-home-tile>
-              <jft-julie-home-tile class="col-33" image="images/home/MPA.png"></jft-julie-home-tile>
-              <jft-julie-home-tile class="col-33" image="images/home/24H.png"></jft-julie-home-tile>
-              <jft-julie-home-tile class="col-50" image="images/home/NESTLE_WATERS.png"></jft-julie-home-tile>
-              <jft-julie-home-tile class="col-50" image="images/home/POC_PENIBILITE.png"></jft-julie-home-tile>
-              <jft-julie-home-tile class="col-66" image="images/home/POC_IMMO.png" style="float: right;"></jft-julie-home-tile>
-              <jft-julie-home-tile class="col-33" image="images/home/CBP.png"></jft-julie-home-tile>
-              <jft-julie-home-tile class="col-33" image="images/home/MEETUP.png"></jft-julie-home-tile>
-              <jft-julie-home-tile class="col-33" image="images/home/ENS_RENNES.png"></jft-julie-home-tile>
-              <jft-julie-home-tile class="col-33" image="images/home/FONTEVRAUD.png"></jft-julie-home-tile>
-              <jft-julie-home-tile class="col-33" image="images/home/FRANSBONHOMME.png"></jft-julie-home-tile>
-            </section>
+        <section data-route="book-detail" class="no-padding">
+          <div class="book-detail-description">{{currentModel.description}}</div>
+          BOOK DETAIL
+          <span>{{currentModel.name}}</span>
+        </section>
 
-            <section data-route="book-detail" class="no-padding">
-              <div class="book-detail-description">{{currentModel.description}}</div>
-              BOOK DETAIL
-              <span>{{currentModel.name}}</span>
-            </section>
+        <section data-route="cv" class="limited-content">
+          <jft-julie-cv-tile image="images/cv/photo.png" class="col-33 cv-medium hide-small"></jft-julie-cv-tile>
+          <jft-julie-cv-tile image="images/cv/formations.png" class="col-33 cv-medium"></jft-julie-cv-tile>
+          <jft-julie-cv-tile image="images/cv/outils.png" class="col-33 cv-medium"></jft-julie-cv-tile>
+          <jft-julie-cv-tile image="images/cv/experiences.png" class="col-33 cv-big"></jft-julie-cv-tile>
+          <jft-julie-cv-tile image="images/cv/titre.png" class="col-33 cv-big hide-small"></jft-julie-cv-tile>
+          <jft-julie-cv-tile image="images/cv/competences.png" class="col-33 cv-big"></jft-julie-cv-tile>
+          <jft-julie-cv-tile image="images/cv/objectif.png" class="col-33 cv-small"></jft-julie-cv-tile>
+          <jft-julie-cv-tile image="images/cv/book.png" class="col-33 cv-small hide-small"></jft-julie-cv-tile>
+          <jft-julie-cv-tile image="images/cv/encart_petits_pois.png"
+                             class="col-33 cv-small hide-small"></jft-julie-cv-tile>
+          <br class="clear"/>
+          <div class="download-button-container">
+            <a href="/CV_JulieVuillaume_Webdesigner_UIDesigner.pdf" target="_blank">
+              <paper-button class="pink-button"><span class="label">TELECHARGER LA VERSION PRINT</span><iron-icon class="big" src="images/cv/download_icon.svg"></iron-icon></paper-button>
+            </a>
+          </div>
 
-            <section data-route="cv" class="limited-content">
+          <div class="tuto-diy visible-large">
+            <h3>TUTO PLIAGE DIY</h3>
+            <iron-image src="images/cv/visuel_diy_cv.png" style="background: white;" preload fade></iron-image>
+          </div>
 
-            </section>
+        </section>
 
-            <section data-route="contact">
-              Contact
-            </section>
+        <section data-route="contact" class="limited-content">
+          Contact
+        </section>
 
-          </iron-pages>
-        </div>
-      </paper-scroll-header-panel>
+      </iron-pages>
+      <br class="clear"/>
+      <footer class="global-footer"><span>&copy;2015 Julie Vuillaume</span></footer>
+    </div>
+  </paper-scroll-header-panel>
 
-  </template>
+</template>
 
-  <!-- build:js scripts/app.js -->
-  <script src="scripts/app.js"></script>
-  <!-- endbuild-->
+<!-- build:js scripts/app.js -->
+<script src="scripts/app.js"></script>
+<!-- endbuild-->
 </body>
 
 </html>

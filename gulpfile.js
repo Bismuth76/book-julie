@@ -106,7 +106,10 @@ gulp.task('copy', function () {
     .pipe($.rename('elements.vulcanized.html'))
     .pipe(gulp.dest('dist/elements'));
 
-  return merge(app, bower, elements, vulcanized, swBootstrap, swToolbox)
+  var cv = gulp.src(['app/CV_JulieVuillaume_Webdesigner_UIDesigner.pdf'])
+    .pipe(gulp.dest('dist'));
+
+  return merge(app, bower, elements, vulcanized, swBootstrap, swToolbox, cv)
     .pipe($.size({title: 'copy'}));
 });
 

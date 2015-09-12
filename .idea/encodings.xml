@@ -6,6 +6,7 @@
     <file url="file://$PROJECT_DIR$/app/elements/elements.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/elements/jft-font-baron/jft-font-baron.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/elements/jft-font-baron/stylesheet.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/elements/jft-julie-cv-tile/jft-julie-cv-tile.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/elements/jft-julie-home-tile/jft-julie-home-tile.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/elements/routing.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/images/logo.svg" charset="UTF-8" />
@@ -14,5 +15,7 @@
     <file url="file://$PROJECT_DIR$/app/styles/app-theme.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/main.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bower_components/paper-scroll-header-panel/demo/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gulp/copy.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gulpfile.js" charset="UTF-8" />
   </component>
 </project>

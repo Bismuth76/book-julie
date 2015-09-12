@@ -54,7 +54,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     --paper-scroll-header-panel-full-header: {
          background-image: url('../images/logo.svg');
          background-size: 260px;
-         background-color: #f38b8f;
+         background-color: var(--accent-color);
      };
 
     /* background for toolbar when it is condensed */
@@ -160,6 +160,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     padding: 20px 50px;
   }
 
+  .clear {
+    clear: both;
+  }
+
   .app-name {
     font-size: 30px;
     padding-top: 14px;
@@ -183,6 +187,65 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   .menu-item.active paper-button {
     border-color: white;
+  }
+
+  .col-33 {
+    width: 33.33%;
+    display: inline-block;
+    position: relative;
+  }
+  .col-66 {
+    width: 66.66%;
+    display: inline-block;
+    position: relative;
+  }
+  .col-50 {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+  }
+
+  .download-button-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pink-button {
+    background: var(--accent-color);
+    border-radius: 0;
+    color: white;
+    padding: 10px 20px;
+    margin: 35px auto 40px auto;
+  }
+
+  .pink-button .label {
+    vertical-align: middle;
+    padding-right: 12px;
+    font-size: 20px;
+  }
+
+  .visible-large {
+    display: none;
+  }
+
+  .tuto-diy {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .big {
+    --iron-icon-height: 40px;
+    --iron-icon-width: 40px;
+  }
+
+  .global-footer {
+    height: 90px;
+    width: 100%;
+    background: white;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 2px 1px;
+    line-height: 90px;
+    padding: 0 67px;
   }
 
   /* Breakpoints */
@@ -238,6 +301,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       background: white;
     }
 
+    .col-33,
+    .col-50,
+    .col-66 {
+      width: 100%;
+    }
+
+    .global-footer {
+      text-align: center;
+      padding: 0;
+    }
   }
 
   /* Tablet+ */
@@ -344,5 +417,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
   }
   /* desktop-xlarge */
-  @media all and (min-width: 1601px) and (max-width: 1920px) { }
+  @media all and (min-width: 1601px) and (max-width: 1920px) {
+    .visible-large {
+      display: block;
+    }
+  }
 </style>
