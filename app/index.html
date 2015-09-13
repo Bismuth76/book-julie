@@ -15,8 +15,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="Polymer Starter Kit"/>
-  <title>Polymer Starter Kit</title>
+  <meta name="generator" content="Polymer"/>
+  <title>Julie Vuillaume</title>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <!-- Chrome for Android theme color -->
@@ -30,13 +30,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="Polymer Starter Kit">
+  <meta name="application-name" content="Julie Vuillaume">
   <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
   <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+  <meta name="apple-mobile-web-app-title" content="Julie Vuillaume">
   <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
 
   <!-- Tile icon for Win8 (144x144) -->
@@ -93,23 +93,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
         <section data-route="home" class="limited-content">
-          <jft-julie-home-tile class="col-66" model="{{model.PocTan}}"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-66" model="{{model.POC-TAN}}"></jft-julie-home-tile>
           <jft-julie-home-tile class="col-33" model="{{model.ISDEM}}"></jft-julie-home-tile>
-          <jft-julie-home-tile class="col-33" image="images/home/BPATL.png"></jft-julie-home-tile>
-          <jft-julie-home-tile class="col-50" image="images/home/I_BP.png"></jft-julie-home-tile>
-          <jft-julie-home-tile class="col-50" image="images/home/GUIMIER.png"></jft-julie-home-tile>
-          <jft-julie-home-tile class="col-33" image="images/home/DOCKER.png"></jft-julie-home-tile>
-          <jft-julie-home-tile class="col-33" image="images/home/MPA.png"></jft-julie-home-tile>
-          <jft-julie-home-tile class="col-33" image="images/home/24H.png"></jft-julie-home-tile>
-          <jft-julie-home-tile class="col-50" image="images/home/NESTLE_WATERS.png"></jft-julie-home-tile>
-          <jft-julie-home-tile class="col-50" image="images/home/POC_PENIBILITE.png"></jft-julie-home-tile>
-          <jft-julie-home-tile class="col-66" image="images/home/POC_IMMO.png"
-                               style="float: right;"></jft-julie-home-tile>
-          <jft-julie-home-tile class="col-33" image="images/home/CBP.png"></jft-julie-home-tile>
-          <jft-julie-home-tile class="col-33" image="images/home/MEETUP.png"></jft-julie-home-tile>
-          <jft-julie-home-tile class="col-33" image="images/home/ENS_RENNES.png"></jft-julie-home-tile>
-          <jft-julie-home-tile class="col-33" image="images/home/FONTEVRAUD.png"></jft-julie-home-tile>
-          <jft-julie-home-tile class="col-33" image="images/home/FRANSBONHOMME.png"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" model="{{model.BPATL}}"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-50" model="{{model.I-BP}}"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-50" model="{{model.GUIMIER}}"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" model="{{model.DOCKER}}"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" model="{{model.MPA}}"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" model="{{model.24H}}"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-50" model="{{model.NESTLE-WATERS}}"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-50" model="{{model.PENIBILITE}}"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-66" model="{{model.IMMO}}" style="float: right;"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" model="{{model.CBP}}"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" model="{{model.MEETUP}}"></jft-julie-home-tile>
+          <br class="clear"/>
+          <jft-julie-home-tile class="col-33" model="{{model.ENS-RENNES}}"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" model="{{model.FONTEVRAUD}}"></jft-julie-home-tile>
+          <jft-julie-home-tile class="col-33" model="{{model.FRANSBONHOMME}}"></jft-julie-home-tile>
         </section>
 
         <section data-route="book-detail" class="no-padding">
@@ -130,8 +130,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <jft-julie-cv-tile image="images/cv/competences.png" class="col-33 cv-big"></jft-julie-cv-tile>
           <jft-julie-cv-tile image="images/cv/objectif.png" class="col-33 cv-small"></jft-julie-cv-tile>
           <jft-julie-cv-tile image="images/cv/book.png" class="col-33 cv-small hide-small"></jft-julie-cv-tile>
-          <jft-julie-cv-tile image="images/cv/encart_petits_pois.png"
-                             class="col-33 cv-small hide-small"></jft-julie-cv-tile>
+          <jft-julie-cv-tile image="images/cv/encart_petits_pois.png" class="col-33 cv-small hide-small"></jft-julie-cv-tile>
           <br class="clear"/>
           <div class="download-button-container">
             <a href="/CV_JulieVuillaume_Webdesigner_UIDesigner.pdf" target="_blank">
@@ -147,7 +146,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </section>
 
         <section data-route="contact" class="limited-content">
-          Contact
+          <form is="iron-form" id="contact-form" method="post" action="//formspree.io/folliot.julien+julie@gmail.com" class="contact-form">
+            <paper-input name="name" label="Nom et Prénom"></paper-input>
+            <gold-email-input name="email" label="Votre adresse mail" auto-validate error-message="Adresse non valide"></gold-email-input>
+            <paper-textarea name="message" label="Votre message" maxlength="4000"></paper-textarea>
+            <paper-button class="pink-button">Envoyer</paper-button>
+          </form>
         </section>
 
       </iron-pages>
