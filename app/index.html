@@ -113,7 +113,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </section>
 
         <section data-route="book-detail" class="no-padding">
-          <div class="book-detail-description">{{currentModel.description}}</div>
+          <div class="book-detail-description-container" id="book-detail-container">
+            <div class="book-detail-description">
+              <div class="book-detail-description-title flex layout horizontal self-center">
+                <div class="flex-1 self-center">{{currentModel.fullName}}</div>
+                <div class="book-detail-caret self-center">V</div>
+              </div>
+              <div class="book-detail-description-text flex">{{currentModel.description}}</div>
+            </div>
+          </div>
           <div class="book-detail-image-container">
             <template is="dom-repeat" items="{{currentModel.images}}" as="bookImage">
               <jft-julie-book-tile image="{{bookImage}}" class="col-100"></jft-julie-book-tile>

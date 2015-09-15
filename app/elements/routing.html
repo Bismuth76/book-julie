@@ -37,6 +37,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     });
 
     page('/book/:id', scrollProcess, function (data) {
+      Polymer.Base.toggleClass('opened', false, Polymer.Base.$$('#book-detail-container'));
       app.route = 'book-detail';
       app.currentModel = app.model[data.params.id];
     });
