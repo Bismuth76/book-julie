@@ -109,7 +109,10 @@ gulp.task('copy', function () {
   var cv = gulp.src(['app/CV_JulieVuillaume_Webdesigner_UIDesigner.pdf'])
     .pipe(gulp.dest('dist'));
 
-  return merge(app, bower, elements, vulcanized, swBootstrap, swToolbox, cv)
+  var baron = gulp.src(['app/elements/jft-font-baron/baron_neue*'])
+    .pipe(gulp.dest('dist/elements/jft-font-baron/'));
+
+  return merge(app, bower, elements, vulcanized, swBootstrap, swToolbox, cv, baron)
     .pipe($.size({title: 'copy'}));
 });
 
