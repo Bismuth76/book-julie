@@ -83,7 +83,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'POC',
       details: 'Ergonomie / Direction Artistique / Webdesign',
       image: 'images/home/TAN.png',
-      description: 'Le texte est à mettre ici en une seule ligne :)',
+      description: 'TAN : Proof Of Concept : travail d’ergonomie, de direction artistique et de webdesign pour la partie web (smartphone et montre connectée). L’idée étant de proposer à la Tan plusieurs axes d’amélioration sur son application dont, notamment, l’intégration de la géolocalisation afin d’avoir en temps réel les arrêts des bus/tram/busway à proximité et la possibilité de paramétrer des alarmes (dernier bus/tram, partir au travail,…). Et pour exprimer cette évolution de manière concrète, il a fallu réaliser des « use cases » sous forme de story tellings, dans un packaging à la charte du client.',
       images: [
         'images/book/VISUELS_POC_TAN/01.png',
         'images/book/VISUELS_POC_TAN/02.png',
@@ -99,7 +99,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'Avant-Vente',
       details: 'Direction Artistique / Webdesign',
       image: 'images/home/ISDEM.png',
-      description: 'Blablabla très long...',
+      description: 'ISDEM : Avant-Vente : travail de direction artistique et de webdesign (desktop, tablette et smartphone) en responsive. Ce nouveau site a pour but de sensibiliser les gens à la protection des espèces maritimes en Bretagne. Design from scratch incluant la réalisation d’illustrations d’oiseaux (cf : smartphone) et d’un logo servant de point de départ à la déclinaison des Homes.',
       images: [
         'images/book/VISUELS_ISDEM/01.png',
         'images/book/VISUELS_ISDEM/02.png',
@@ -112,7 +112,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'Projet',
       details: 'Direction Artistique / Webdesign',
       image: 'images/home/BPATL.png',
-      description: 'Blablabla très long...',
+      description: 'BANQUE POPULAIRE ATLANTIQUE : Projet : travail de direction artistique et de webdesign sur tablette. Usage réservé aux conseillers lors de leurs rendez-vous clientèle pour faire le point sur les contrats des clients et leur proposer des offres plus adaptées.',
       images: [
         'images/book/VISUELS_BPATL/01.png',
         'images/book/VISUELS_BPATL/02.png'
@@ -124,7 +124,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'Avant-Vente',
       details: 'Direction Artistique / Webdesign',
       image: 'images/home/I_BP.png',
-      description: 'Blablabla très long...',
+      description: 'INFORMATIQUE BANQUE POPULAIRE : Avant-Vente : travail de direction artistique et de webdesign pour l’adaptation de l’application mobile sur Windows 10. Deux propositions ergonomiques et graphiques liées à l’OS.',
       images: [
         'images/book/VISUELS_I_BP/01.png',
         'images/book/VISUELS_I_BP/02.png',
@@ -137,7 +137,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'Avant-Vente',
       details: 'Direction Artistique / Webdesign',
       image: 'images/home/GUIMIER.png',
-      description: 'Blablabla très long...',
+      description: 'GUIMIER : Avant-Vente : travail de direction artistique et de webdesign. Proposition design pour le nouveau site responsive du client.',
       images: [
         'images/book/VISUELS_GUIMIER/01.png',
         'images/book/VISUELS_GUIMIER/02.png',
@@ -151,7 +151,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'Cheat Sheet',
       details: 'Direction Artistique',
       image: 'images/home/DOCKER.png',
-      description: 'Blablabla très long...',
+      description: 'DOCKER et GIT : Cheat Sheets : travail de direction artistique sur des supports type dépliants destinés à être distribués aux clients/développeurs/candidats à l’embauche sur des événements (DevFest, Breizhcamp, Meetup,…). Il s’agit de morceaux de codes regroupés sur un format simple et pratique pour un public expérimenté.',
       images: [
         'images/book/VISUELS_BREIZHCAMP/01.png',
         'images/book/VISUELS_BREIZHCAMP/02.png',
@@ -167,7 +167,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'Avant-Vente',
       details: 'Direction Artistique / Webdesign',
       image: 'images/home/MPA.png',
-      description: 'Blablabla très long...',
+      description: 'MUSEE DE PONT-AVEN : Avant-Vente : travail de direction artistique et de webdesign. Proposition design pour le nouveau site responsive du client.',
       images: [
         'images/book/VISUELS_MPA/01.png',
         'images/book/VISUELS_MPA/02.png',
@@ -180,7 +180,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'Avant-Vente',
       details: 'Direction Artistique / Webdesign',
       image: 'images/home/24H.png',
-      description: 'Blablabla très long...',
+      description: '24 HEURES DU MANS : Avant-Vente : travail de direction artistique et de webdesign. Proposition en card-based design pour le nouveau site responsive du client.',
       images: [
         'images/book/VISUELS_ACO/01.png',
         'images/book/VISUELS_ACO/02.png',
@@ -194,7 +194,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'Projet',
       details: 'Direction Artistique / Webdesign',
       image: 'images/home/NESTLE_WATERS.png',
-      description: 'Blablabla très long...',
+      description: 'NESTLE WATERS SPONSORING : Projet : travail de direction artistique et de webdesign. Site destiné exclusivement aux sponsors de Nestlé pour se tenir informés de l’ensemble des événements passés, présents et à venir.',
       images: [
         'images/book/VISUELS_NESTLE_WATERS/01.png',
         'images/book/VISUELS_NESTLE_WATERS/02.png',
@@ -207,7 +207,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'POC',
       details: 'Ergonomie / Direction Artistique / Webdesign',
       image: 'images/home/POC_PENIBILITE.png',
-      description: 'Blablabla très long...',
+      description: 'PENIBILITE : Proof Of Concept : travail d’ergonomie, de direction artistique et de webdesign pour une application destinée aux salariés qui leur permet de quantifier la pénibilité liée à leurs posts, en conformité avec la nouvelle réforme « Prévention de la pénibilité au travail ».',
       images: [
         'images/book/VISUELS_POC_PENIBILITE/01.png'
       ]
@@ -218,7 +218,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'POC',
       details: 'Ergonomie / Direction Artistique / Webdesign',
       image: 'images/home/POC_IMMO.png',
-      description: 'Blablabla très long...',
+      description: 'AGENCE IMMOBILIERE : Proof Of Concept : travail d’ergonomie, de direction artistique et de webdesign. Application destinée à afficher les résultats de recherche d’un utilisateur lorsque celui-ci passe devant une agence immobilière équipée d’un ou plusieurs écrans dans sa vitrine et de balises iBeacon. Dans un premier temps, il reçoit sur son smartphone une notification de l’agence lui indiquant le nombre de résultats qui correspondent à sa recherche. En validant, apparaissent alors plusieurs annonces sous forme de liste et en cliquant sur l’une d’elles, le mobile se transforme en télécommande qui contrôle l’affichage sur l’écran à l’aide de flèches « précédente/suivante ».',
       images: [
         'images/book/VISUELS_POC_IMMO/01.png',
         'images/book/VISUELS_POC_IMMO/02.png'
@@ -230,7 +230,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'Avant-Vente',
       details: 'Direction Artistique / Webdesign',
       image: 'images/home/CBP.png',
-      description: 'Blablabla très long...',
+      description: 'CBP : Avant-Vente : travail de direction artistique et de webdesign. Proposition design pour le nouveau site responsive du client.',
       images: [
         'images/book/VISUELS_CBP/01.png',
         'images/book/VISUELS_CBP/02.png'
@@ -242,7 +242,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'Projet interne',
       details: 'Direction Artistique',
       image: 'images/home/MEETUP.png',
-      description: 'Blablabla très long...',
+      description: 'MEETUP : Affiche : travail de direction artistique. Création d’une affiche pour le Meetup, événement durant lequel certains collaborateurs ont un temps de parole pour exposer leurs connaissances sur des thèmes précis face à un public expérimenté dans le domaine informatique.',
       images: [
         'images/book/VISUELS_MEETUP/01.png',
         'images/book/VISUELS_MEETUP/02.png',
@@ -256,7 +256,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'Avant-Vente',
       details: 'Direction Artistique / Webdesign',
       image: 'images/home/ENS_RENNES.png',
-      description: 'Blablabla très long...',
+      description: 'ENS RENNES : Avant-Vente : travail de direction artistique et de webdesign. Proposition design pour le nouveau site responsive du client.',
       images: [
         'images/book/VISUELS_ENS_RENNES/01.png',
         'images/book/VISUELS_ENS_RENNES/02.png'
@@ -268,7 +268,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'Projet',
       details: 'Webdesign',
       image: 'images/home/FONTEVRAUD.png',
-      description: 'Blablabla très long...',
+      description: 'ABBAYE DE FONTEVRAUD : Projet : travail de webdesign. Déclinaison de la nouvelle charte du site sur la partie mobile.',
       images: [
         'images/book/VISUELS_FONTEVRAUD/01.png',
         'images/book/VISUELS_FONTEVRAUD/02.png',
@@ -282,7 +282,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'Projet',
       details: 'Direction Artistique / Webdesign',
       image: 'images/home/FRANSBONHOMME.png',
-      description: 'Blablabla très long...',
+      description: 'FRANSBONHOMME : Projet : travail de direction artistique et de webdesign.',
       images: [
         'images/book/VISUELS_FRANSBONHOMME/01.png',
         'images/book/VISUELS_FRANSBONHOMME/02.png'
