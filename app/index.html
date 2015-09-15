@@ -154,6 +154,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </section>
 
         <section data-route="contact" class="limited-content">
+          <template is="dom-if" if="{{contactSent}}">
+            <div class="contact-form-success"><span>Votre message a été envoyé</span></div>
+          </template>
+          <template is="dom-if" if="{{contactSending}}">
+            <div class="contact-form-pending"><span>Envoi de votre message...</span></div>
+          </template>
           <form is="iron-form" id="contact-form" method="post" action="//formspree.io/folliot.julien+julie@gmail.com" class="contact-form">
             <paper-input name="name" label="Nom et Prénom"></paper-input>
             <gold-email-input name="email" label="Votre adresse mail" auto-validate error-message="Adresse non valide"></gold-email-input>

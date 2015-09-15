@@ -70,8 +70,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     document.querySelector('#contact-form .pink-button').addEventListener('click', function() {
       var form = document.querySelector('#contact-form');
-      /*console.log(form.serialize());*/
+      app.contactSending = true;
       form.submit();
+    });
+
+    document.querySelector('#contact-form').addEventListener('iron-form-response', function(event) {
+      app.contactSending = false;
+      app.contactSent = true;
+      Polymer.Base.async(function() {
+        app.contactSent = false;
+      }, 20000);
     });
 
     Polymer.Base.$$('#book-detail-container .book-detail-description-title').addEventListener('click', function() {

@@ -52,8 +52,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     /* background for toolbar when it is at its full size */
     --paper-scroll-header-panel-full-header: {
-         background-image: url('../images/logo.svg');
-         background-size: 260px;
+         background-image: url('../images/logo_big.svg');
+         /*background-size: 260px;*/
+         background-size: 600px;
          background-color: var(--accent-color);
      };
 
@@ -297,6 +298,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     margin: 0 auto 300px auto;
   }
 
+  .contact-form-pending {
+    max-width: 800px;
+    padding: 20px 50px;
+    background: rgba(118, 163, 239, 0.2);
+    color: #46a0a7;
+    margin: 0 auto 20px auto;
+  }
+
+  .contact-form-success {
+    max-width: 800px;
+    padding: 20px 50px;
+    background: rgba(127, 239, 59, 0.2);
+    color: #60A735;
+    margin: 0 auto 20px auto;
+  }
+
   .book-detail-caret {
     display: none;
   }
@@ -424,6 +441,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     .global-footer {
       text-align: center;
       padding: 0;
+    }
+
+    .contact-form-pending,
+    .contact-form-success {
+      margin-bottom: 0;
+      text-align: center;
     }
   }
 
