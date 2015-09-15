@@ -74,7 +74,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       form.submit();
     });
 
-    document.querySelector('#contact-form').addEventListener('iron-form-response', function(event) {
+    document.querySelector('#contact-form').addEventListener('iron-form-response', function() {
       app.contactSending = false;
       app.contactSent = true;
       Polymer.Base.async(function() {
