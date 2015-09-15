@@ -83,7 +83,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       type: 'POC',
       details: 'Ergonomie / Direction Artistique / Webdesign',
       image: 'images/home/TAN.png',
-      description: 'Blablabla très long...',
+      description: 'Le texte est à mettre ici en une seule ligne :)',
       images: [
         'images/book/VISUELS_POC_TAN/01.png',
         'images/book/VISUELS_POC_TAN/02.png',
