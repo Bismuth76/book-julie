@@ -150,7 +150,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   /* Height of the scroll area */
   .content {
-    min-height: 1000px;
+    /*min-height: 1000px;*/
   }
 
   .book-detail-description-container {
@@ -294,11 +294,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     max-width: 800px;
     padding: 20px 50px;
     background: white;
-    margin: 0 auto;
+    margin: 0 auto 300px auto;
   }
 
   .book-detail-caret {
     display: none;
+  }
+
+  .app-name a:active,
+  .app-name a:hover,
+  .app-name a:visited,
+  .app-name a {
+    color: var(--primary-text-color);
+    text-decoration: none;
   }
 
   /* Breakpoints */
@@ -522,9 +530,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     }
   }
   /* desktop-xlarge */
-  @media all and (min-width: 1601px) {
+  @media all and (min-width: 1000px) {
     .visible-large {
       display: block;
+    }
+    .tuto-diy iron-image {
+      width: 100%;
+      height: 1269px;
     }
   }
 </style>

@@ -23,6 +23,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     var toolbar = document.querySelector('paper-toolbar');
     var items = document.querySelectorAll('.menu-item');
 
+    var processItemsColor = function(item) {
+      item.style.color = 'rgb(' + red + ',' + green + ',' + blue + ')';
+      item.querySelector('paper-button').style['border-color'] = item.className.indexOf('active') > -1 ? 'rgb(' + red + ',' + green + ',' + blue + ')' : 'transparent';
+    };
+
     title.style.opacity = 0;
 
     var red=255, green=255, blue=255;
@@ -38,10 +43,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       green = Math.round(255 - factor * (255 - 27));
       blue = Math.round(255 - factor * (255 - 30));
 
-      [].forEach.call(items, function(item) {
-        item.style.color = 'rgb(' + red + ',' + green + ',' + blue + ')';
-        item.querySelector('paper-button').style['border-color'] = item.className.indexOf('active') > -1 ? 'rgb(' + red + ',' + green + ',' + blue + ')' : 'transparent';
-      });
+      [].forEach.call(items, processItemsColor);
 
       title.style.opacity = factor;
       title.style.color = 'rgb(' + red + ',' + green + ',' + blue + ')';
@@ -56,11 +58,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     [].forEach.call(items, function(item) {
       item.addEventListener('click', function() {
-        [].forEach.call(items, function(item) {
-          item.style.color = 'rgb(' + red + ',' + green + ',' + blue + ')';
-          item.querySelector('paper-button').style['border-color'] = item.className.indexOf('active') > -1 ? 'rgb(' + red + ',' + green + ',' + blue + ')' : 'transparent';
-        });
+        [].forEach.call(items, processItemsColor);
       });
+    });
+
+    title.addEventListener('click', function() {
+      Polymer.Base.async(function() {
+        [].forEach.call(items, processItemsColor);
+      }, 10);
     });
 
     document.querySelector('#contact-form .pink-button').addEventListener('click', function() {
